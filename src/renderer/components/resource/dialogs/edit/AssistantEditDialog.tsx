@@ -95,7 +95,7 @@ function KnowledgeBaseAvatar({
   className?: string
 }) {
   return (
-    <span className={className} style={{ background: 'rgba(139, 92, 246, 0.125)' }}>
+    <span className={className} style={{ background: 'color-mix(in srgb, var(--color-primary) 12%, transparent)' }}>
       <Database size={14} strokeWidth={1.4} />
     </span>
   )

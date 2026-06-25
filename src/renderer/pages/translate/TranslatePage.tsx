@@ -739,7 +739,9 @@ const TranslatePage: FC = () => {
             <Button
               variant="ghost"
               size="icon-sm"
-              className={historyOpen ? 'text-foreground' : 'text-foreground-muted hover:text-foreground'}
+              className={
+                historyOpen ? 'text-foreground' : 'text-foreground/80 hover:text-foreground [&_svg]:[stroke-width:1.6]'
+              }
               onClick={() =>
                 setHistoryOpen((open) => {
                   const next = !open
@@ -754,7 +756,9 @@ const TranslatePage: FC = () => {
             <Button
               variant="ghost"
               size="icon-sm"
-              className={settingsOpen ? 'text-foreground' : 'text-foreground-muted hover:text-foreground'}
+              className={
+                settingsOpen ? 'text-foreground' : 'text-foreground/80 hover:text-foreground [&_svg]:[stroke-width:1.6]'
+              }
               onClick={() =>
                 setSettingsOpen((open) => {
                   const next = !open
